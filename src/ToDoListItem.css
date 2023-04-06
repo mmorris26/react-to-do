@@ -1,0 +1,18 @@
+.ToDoListItem {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px;
+  padding: 10px;
+  border: 5px solid purple;
+  list-style: none;
+  font-size: 24px;
+}
+
+.ToDoListItem div {
+  width: 8vmin;
+  height: 8vmin;
+  margin-right: 4vmin;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+}
