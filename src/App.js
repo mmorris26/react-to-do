@@ -11,6 +11,11 @@ function App() {
 
   const [showTodos, setShowTodos] = useState(true);
 
+  function addTodo(todo) {
+    // Replace the state, and not mutate it
+    setTodos([...todos, todo]);
+  }
+
   return (
     <div className="App">
       <h1>React To-Do</h1>
@@ -23,7 +28,7 @@ function App() {
       { showTodos && <ToDoList todos={todos} /> }
 
       <hr />
-      <NewToDoForm />
+      <NewToDoForm addTodo={addTodo} />
     </div>
   );
 }
